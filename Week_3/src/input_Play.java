@@ -30,9 +30,9 @@ public class input_Play {
 	
 	
 	}
-	private static double kilos = convertToPounds(double kilos){
-		
-	}
+	private static double convertToPounds(double kilos){
+		return kilos*2.2;
+			}
 	
 	
 	//private is the access static means its outside of the main

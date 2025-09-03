@@ -2,7 +2,7 @@
 public class TestingMethods {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Input_Play.printInput();
 
 	}
 
