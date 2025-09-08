@@ -15,10 +15,10 @@ public class Bookwork {
 //		System.out.println("type something:");
 //		String words = input.nextLine();
 //		System.out.println(words);
-		
-		int inch;
-		double cm;
-		final double CM_PER_INCH = 2.54;
+//		final double CM_PER_INCH = 2.54;
+//		int inch = 100;
+//		double cm = inch * CM_PER_INCH; 
+//		
 		
 //		System.out.println("How many inches?");
 //		
@@ -31,7 +31,43 @@ public class Bookwork {
 		
 		//to // out lines use control / 
 		
-		System.out.println(4/3);
+//		System.out.println(4.0/3);//when using 2 whole numbers you will only get an integer response 
+//		//but when you flip it from 4/3 to 4.0/3 it upgrades to a double
+//		
+//		System.out.printf("Four thirds  = %.3f/n", 4.0/3);
+//		System.out.printf("%d in = %.3f cm/n", inch ,cm);
+//		//%d stops it from upgrading to a float
+//		
+//		String num = "73";
+//		double pi = 3.14;
+//		
+//		System.out.println((int)pi); = (int);
+////		System.out.println((int) pi + " " + pi); //another way to write it
+//		System.out.println((int)num);
+//		// all primitavie types (purple color) start with a lower case letter
+//		System.out.println(Integer.parseInt(num) + pi);
+//		System.out.println(num + pi);
+//		
+//		int feet = 76/12;
+//		int inches = 76%12;
+//		
+//		System.out.println(feet + "' " + inches + "\"");
+		
+		double cm;
+		int feet, inches, remainder;
+		final int IN_PER_FOOT = 12;//inches are an integer
+		final double CM_PER_INCH = 2.54;// CM are a float
+		
+		System.out.println("Exactly how many inches?");
+		cm = input.nextDouble();
+		
+		inches = (int)(cm/CM_PER_INCH);
+		feet = inches / IN_PER_FOOT;
+		remainder = inches % IN_PER_FOOT;//when using a % is a modular gives you a remainder
+		
+		System.out.printf("%.2f cm is %d ft and %d in\n", cm, feet, remainder);
+		//putting the inputs after the "" means you input and use them
+		// you use this way to write it because if you used + instead you would eventually get a stack overflow
 		
 		
 	}
