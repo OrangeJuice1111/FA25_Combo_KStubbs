@@ -24,7 +24,7 @@ public class TicTacToe {
 			System.out.println("Tie!!");
 		}else 
 		{
-			System.out.printf("player %d wins", winner);
+			System.out.printf("player %d Wins!!", winner);
 		}
 	}
 
