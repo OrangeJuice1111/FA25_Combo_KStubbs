@@ -1,5 +1,6 @@
+import java.util.Scanner;
 
-		public class Group_A {
+public class Scrabble {
 
 			static Scanner input = new Scanner (System.in);
 
@@ -63,7 +64,4 @@
 
 			}
 
-			}
 	}
-
-}
