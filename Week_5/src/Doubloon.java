@@ -7,7 +7,7 @@ public class Doubloon {
 		//a word is said to be a doubloon is said to be one if every word appears exactly twice
 		System.out.println("Enter a word and I will tell you if its a Doubloon");
 		String word = input.next();
-		
+		word = word.toLowerCase();//sets everything to lowercase so your answers line up with the parameters
 		boolean isDub = isDoubloon(word);
 		
 		if(isDub)
