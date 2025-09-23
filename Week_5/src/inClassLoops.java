@@ -8,7 +8,7 @@ public class inClassLoops {
 		System.out.println(count);
 
 		int terms = 10;
-		int rows =7;
+		int rows =20;
 
 		ForFibonacci(terms);
 
