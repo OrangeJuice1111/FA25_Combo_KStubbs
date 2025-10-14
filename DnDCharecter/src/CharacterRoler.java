@@ -39,10 +39,10 @@ public class CharacterRoler {
 	}
 
 	private String recType() {
-		int high = stats[0];
+		int high = 0;
 		String ret = "";
 		for (int i = 0; i < stats.length; i++) {
-			if (stats[i] > high)
+			if (stats[i] > stats[high])
 				high = i;
 		}
 		switch (high) {
