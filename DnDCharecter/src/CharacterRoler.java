@@ -74,7 +74,7 @@ public class CharacterRoler {
 	public String toString() {
 		return "CharacterRoler [str=" + str + " Mod [" + findMod(str) + "], dex=" + dex + " Mod [" + findMod(dex)
 				+ "], con=" + con + " Mod [" + findMod(con) + "], intl=" + intl + " Mod [" + findMod(intl) + "], wis="
-				+ wis + " Mod [" + findMod(wis) + "], cha=" + cha + " Mod [" + findMod(cha) + "]" + recType();
+				+ wis + " Mod [" + findMod(wis) + "], cha=" + cha + " Mod [" + findMod(cha) + "]" + "\nReccomeneded class = " + recType();
 		
 	}
 
