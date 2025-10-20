@@ -53,7 +53,7 @@ public class CharacterRoler {
 				ret = "Rouge";
 				break;
 			case 2:
-				ret = "Barbarian";
+				ret = "Paladin";
 				break;
 			case 3:
 				ret = "Wizard";
