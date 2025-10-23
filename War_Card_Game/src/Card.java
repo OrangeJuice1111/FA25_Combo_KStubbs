@@ -34,7 +34,7 @@ public class Card {
 		}
 		if(this.rank > that.rank)
 		{
-			return -1;
+			return 1;
 		}
 		return 0;
 	}

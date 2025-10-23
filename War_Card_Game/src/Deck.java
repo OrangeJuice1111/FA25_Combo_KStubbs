@@ -19,6 +19,38 @@ public class Deck {
 		}
 
 	}
+	
+	public void selectionSort()
+	{
+		for (int i = 0; i < cards.length; i++) {
+			 int bigindex = 0;                     
+			    for (int j=1; j < cards.length-i; j++)     
+			      if (cards[j].compareTo(cards[bigindex]) > 0)                
+			        bigindex = j;                     
+			    swap(bigindex, cards.length-1-i);  
+		}
+	}
+	public void InsertionSort()
+	{
+		for (int i = 1; i < cards.length ; i++) {
+			for (int j = i;(j > 0) && (cards[j].compareTo(cards[j-1]) < 0); j--) {
+				swap(j, j-1);
+			}
+		}
+	}
+	
+	public void bubbleSort()
+	{
+		for (int i = 0; i < cards.length; i++) {
+			for (int j = 1; j < cards.length - i; j++) {//-i means we dont check the end
+				if(cards[j-1].compareTo(cards[j]) > 0)
+				{
+					swap(j-1, j);
+				}
+				
+			}
+		}
+	}
 
 	public Card[] getCards() {
 		return cards;
@@ -51,9 +83,9 @@ public class Deck {
 	public void printCards() {
 		int n = 0;
 		for (Card card : cards) {
-			System.out.print(card + ", ");
 			if (n % 13 == 0 && n != 0)
-				System.out.println();
+			System.out.println();
+			System.out.print(card + ", ");
 			n++;
 		}
 	}

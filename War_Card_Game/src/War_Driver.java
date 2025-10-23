@@ -5,6 +5,12 @@ public class War_Driver {
 		Deck deck = new Deck();
 		deck.shuffle();
 		deck.printCards();
+		System.out.println();
+		System.out.println();
+		//deck.bubbleSort();
+		//deck.InsertionSort();
+		deck.selectionSort();
+		deck.printCards();
 	}
 
 	private static int binSearch(Card[] cards, Card target) {
