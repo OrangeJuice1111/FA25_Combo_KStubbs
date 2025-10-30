@@ -20,6 +20,15 @@ public class Deck {
 
 	}
 	
+	public Deck subDeck(int low, int high)
+	{
+		Deck sub = new Deck (high - low + 1);
+		for (int i = 0; i < sub.cards.length; i++) {
+			sub.cards[i] = this.cards[low + i];
+		}
+		return sub;
+	}
+	
 	public void selectionSort()
 	{
 		for (int i = 0; i < cards.length; i++) {
