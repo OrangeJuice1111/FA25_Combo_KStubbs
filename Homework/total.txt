@@ -1,0 +1,3 @@
+Total: $32.00
+Tax: $1.70
+Total + Tax : $33.70

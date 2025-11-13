@@ -13,14 +13,14 @@ public class Fileio {
 		File myFile = createFile(fileName);
 		input.nextLine();
 		// System.out.println("But thats alright");
-//		System.out.println(" what do you want to write to the file?");
-//		String str = input.nextLine();
-//		writeFile(fileName , str);
-//		
-//		System.out.println(" what do you want to append to the file?");
-//		String str2 = input.nextLine();
-//		
-//		appendTo(fileName, str2);
+		System.out.println(" what do you want to write to the file?");
+		String str = input.nextLine();
+		writeFile(fileName , str);
+		
+		System.out.println(" what do you want to append to the file?");
+		String str2 = input.nextLine();
+		
+		//appendTo(fileName, str2);
 
 	readFile(myFile);
 //		deleteFile(myFile);
